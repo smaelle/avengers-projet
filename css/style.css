@@ -1,56 +1,39 @@
-*{
-    box-sizing: border-box;
-}
-
-
-.site-header{
-    padding: .1rem 0 0 0;
+body{
+    background-color: black;
 }
 
 .site-top{
     display: flex;
     justify-content: space-between;
-    padding: 1rem 4rem;
-    transition: .5s;
+    padding: 1rem 2rem;
 }
 
-.logo-dark{
-    display: none;
+.logo img{
+    width: 50px;
+    height: 50px;
 }
-.isStuck{
-    width: 100%;
-    background: #ebdddf;
-    z-index: 1;
-}
-
-.isStuck .logo-dark{
-    display: block;
-}
-
-.isStuck .logo-light{
-    display: none;
-}
-.isStuck .site-nav > a{
-    color:black;
-}
-
-.site-nav{
-    height: 2rem;
+nav ul {
     display: flex;
-    justify-content: center;
-}
-.site-nav > a{
-    font-size: 0.8rem;
-    color:black;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-family: indie flowers;
-    letter-spacing: 0.2rem;
-    transition: .5s;
+    margin: 0 auto;
 }
 
+nav ul li a {
+text-transform: uppercase;
+font-weight: bold;
+font-size: 16px;
+color: #FFF;
+text-decoration: none;
+display: inline-block;
+padding: 20px;
 
+width: 100%;
+}
+
+nav ul li a:hover {
+color: blue;
+}
+
+/*************************/
 .section1{
     display: flex;
     flex-wrap: wrap;
@@ -76,11 +59,6 @@
     transition: .5s;
 }
 
-/*.calque2:hover{
-    opacity: 0;
-    transition: .5s ease;
-}*/
-
 .bg{
     background: black; 
     opacity: 0; 
@@ -92,15 +70,14 @@
 }
 
 h2{
-    font-size:6rem;
-    color:red;
+    color:white;
     text-transform:uppercase;
     position: absolute;
     left: 0;
     top: 50%;
+    right: 8%;;
     text-align:center;
     opacity: 0;
-    transform: scale(1.5) translateY(70px);
 }
 
 .parent:hover .calque2{
@@ -115,40 +92,120 @@ h2{
 .parent:hover h2{
     opacity: 1;
     transform: scale(1);
-
+    font-weight: 900;
+    font-size: 28px;
+}
+/*************************/
+.section2{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.block{
-    background:lightpink;
-    opacity: 0;
-    transition: .5s;
-    width: 50%;
-    height:500vh;
-    right: 0;
-    top: 0;
-    position: absolute;
-    z-index: -1;
+.carreblue{
+    flex:1 0 24.8vw;/* grossir retrecir largeur*/
+    height: 24.8vw;
+    position: relative;
+    overflow: hidden;
+    background-color: blue;
+}
+.carreblue p{
+    text-align: justify center;
+    padding: 15%; 
+    line-height: 140%;
+    font-weight: bold;
+    color:white;
 }
 
-.block-visible{
-    opacity: 1;
-    z-index: 1;
-
+.carrered{
+    flex:1 0 24.8vw;/* grossir retrecir largeur*/
+    height: 24.8vw;
+    position: relative;
+    overflow: hidden;
+    background-color: red;
+}
+.carrered p{
+    text-align: justify center;
+    padding: 15%; 
+    line-height: 140%;
+    font-weight: bold;
+    color:white;
 }
 
-.contenufixe{
-    position: fixed;
-}
-
-.fas{
-    font-size: 1.8rem;
-    color: antiquewhite;
-    right: 0;
-    top: 0;
-    position: absolute;
-    text-decoration: none;
-}
-
-.redhair img{
+/*************************/
+.section3 img{
     width: 100%;
 }
+
+.section3 p{
+    color: #FFF;
+    padding: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+/*************************/
+.section4{
+    padding-bottom: 50px;
+    background-color: black;
+}
+
+.Principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.secondaire{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+/*************************/
+.section5 img{
+    width: 100%;
+}
+
+/*************************/
+
+.footer-general{
+	background-color: black;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	padding: 100px 50px;
+}
+
+.footer-left p{
+	color:blue;
+	font-size: 18px;
+    margin: 0;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+.footer-left a{
+	color:white;
+	font-size: 18px;
+    margin: 0;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+
+
+.footer-right{
+	float: right;
+	max-width: 180px;
+}
+
+.footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:black;
+}
+
+
+
+
+
